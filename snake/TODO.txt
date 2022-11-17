@@ -1,0 +1,12 @@
+TO DO:
+
+Use variables for stuff like screen resolution and do calculations with these variables
+
+Queue instructions:
+    - Find a way to prevent you from inputting 3 moves at once, and then only using the last one
+    - Probably create a FIFO stack of inputs, consecutive similar inputs would be turned into just 1
+    - A move would be entered on a valid key input, a move would be taken out every frame/iteration of the run loop
+
+Style points:
+    - Special image for the head of the snake
+    - Create a grid of dark and less dark green squares for better perception of size/position
