@@ -15,7 +15,7 @@ colours = {"White": (255, 255, 255), "Black": (0, 0, 0), "Light Green": (150, 25
 class Apple:
 
     def __init__(self, parent_screen, x, y):
-        self.apple_img = pygame.image.load("Resources/apple.jpeg").convert()
+        self.apple_img = pygame.image.load("Resources/apple_sprite.png").convert_alpha()
         self.parent_screen = parent_screen
         self.x = x
         self.y = y
@@ -33,7 +33,7 @@ class Snake:
         self.parent_screen = parent_screen
 
         # Assigns this object representing an image to the variable Block
-        self.block = pygame.image.load("Resources/block.jpeg").convert()
+        self.block = pygame.image.load("Resources/snake_body.png").convert()
 
         self.x = deque([self.starting_x]*(self.snake_size-1))
         self.x.appendleft(self.starting_x + 1)
